@@ -12,7 +12,9 @@ import RxSwift
 
 protocol BindableType: AnyObject {
     
-    var viewModel: ViewModelType? { get set }
+    associatedtype ViewModel
+    
+    var viewModel: ViewModel? { get set }
     func initializeViews()
     func bindViewModel()
     func postDismissAction()
@@ -21,7 +23,7 @@ protocol BindableType: AnyObject {
 }
 
 extension BindableType where Self: UIViewController {
-    func bindViewModel(to model: ViewModelType) {
+    func bindViewModel(to model: ViewModel) {
         viewModel = model
         loadViewIfNeeded()
         initializeViews()

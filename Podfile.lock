@@ -2,16 +2,21 @@ PODS:
   - Action (5.0.0):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
-  - Alamofire (5.6.1)
+  - Alamofire (4.9.1)
   - Differentiator (5.0.0)
   - Kingfisher (5.15.8):
     - Kingfisher/Core (= 5.15.8)
   - Kingfisher/Core (5.15.8)
-  - Moya (15.0.0):
-    - Moya/Core (= 15.0.0)
-  - Moya/Core (15.0.0):
-    - Alamofire (~> 5.0)
+  - Moya (13.0.0):
+    - Moya/Core (= 13.0.0)
+  - Moya/Core (13.0.0):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
   - ReachabilitySwift (5.0.0)
+  - Result (4.1.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
     - RxSwift (= 6.2.0)
@@ -29,7 +34,8 @@ PODS:
 DEPENDENCIES:
   - Action (= 5.0.0)
   - Kingfisher (~> 5.0)
-  - Moya (= 15.0.0)
+  - Moya (= 13.0.0)
+  - NVActivityIndicatorView (= 4.8.0)
   - ReachabilitySwift
   - RxCocoa (= 6.2.0)
   - RxDataSources (~> 5.0)
@@ -43,7 +49,9 @@ SPEC REPOS:
     - Differentiator
     - Kingfisher
     - Moya
+    - NVActivityIndicatorView
     - ReachabilitySwift
+    - Result
     - RxCocoa
     - RxDataSources
     - RxGesture
@@ -52,17 +60,19 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
-  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
-  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Moya: 161263550064ff8a4948e8ff63137fd72a876292
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
 
-PODFILE CHECKSUM: a71bc284be6934c6c4015dfdaba6a726d7088f5a
+PODFILE CHECKSUM: c279c1583d3edf0b1c56412b9cb27c1cf86a20f1
 
 COCOAPODS: 1.11.3

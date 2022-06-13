@@ -11,53 +11,38 @@ import Moya
 import RxRelay
 import RxSwift
 
-protocol BaseRemoteDataSourceProtocol {
+protocol RemoteDataSourceProtocol {
     associatedtype RequestTargetType: BaseTarget
     var remoteFetcher: RemoteFetcher { get set }
     var disposeBag: DisposeBag { get }
     func getOnlineResponse
     <R: BaseResponse, T: BaseTarget>(request: BaseRemoteRequest<T>,
-                                     responseObservable: PublishRelay<R>)
+                                     responseObservable: PublishSubject<R>)
 }
 
-extension BaseRemoteDataSourceProtocol {
+class BaseRemoteDataSource<T: BaseTarget>: RemoteDataSourceProtocol {
+    
+    typealias RequestTargetType = T
+    
+    var remoteFetcher: RemoteFetcher
+    var disposeBag: DisposeBag = DisposeBag()
+    
+    init(repo: BaseRepo?) {
+        self.remoteFetcher = RemoteFetcher(loading: repo?.isLoading,
+                                           error: repo?.error)
+    }
+    
     func getOnlineResponse
     <R: BaseResponse, T: BaseTarget>(request: BaseRemoteRequest<T>,
-                                     responseObservable: PublishRelay<R>) {
+                                     responseObservable: PublishSubject<R>) {
         self.remoteFetcher.getRemoteResponse(request: request,
                                              responseObservable: responseObservable)
     }
 }
 
-class BaseRemoteDataSource<T: BaseTarget>: BaseRemoteDataSourceProtocol {
-    
-    typealias RequestTargetType = T
-    
-    var remoteFetcher: RemoteFetcher
-    var disposeBag: DisposeBag
-    
-    init(repo: BaseRepo?) {
-        self.disposeBag = DisposeBag()
-        self.remoteFetcher = RemoteFetcher(loading: repo?.isLoading,
-                                           error: repo?.error)
-    }
-}
-
-class BaseLocalDataSource {
-    
-    var localFetcher: LocalFetcher
-    
-    init() {
-        self.localFetcher = LocalFetcher()
-    }
-}
-
-enum RepoError {
+enum RepoError: Error {
     case generic
     case noConnection
-    case invalidToken
     case server
     case parsing
-    case emptyResponse
-    case backEnd(code: Int, body: [String: Any], name: String)
 }

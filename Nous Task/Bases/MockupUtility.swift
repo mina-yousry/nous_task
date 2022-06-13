@@ -10,29 +10,7 @@ import Foundation
 import Moya
 
 class MockupUtility {
-    static var mockList: [String: String] = [
-        "getBrands": "getBrands",
-        "getAccountType": "RegularAccount",
-        "send_verfication_code": "VerificationResponse",
-        "verify_verification_code": "VerificationSuccess",
-        "regular_signup": "RegularSignup",
-        "facebook_signup": "FacebookSignup",
-        "google_signup": "GoogleSignup",
-        "apple_signup": "AppleSignup",
-        "update_customer_data": "UpdateOptionalData",
-        "regular_login": "RegularLogin",
-        "facebook_login": "FacebookLogin",
-        "facebook_login_check": "FacebookLoginCheck",
-        "google_login": "GoogleLogin",
-        "apple_login": "AppleLogin",
-        "reset_password": "ResetPasswordPhoneNumber",
-        "delete_account": "DeactivateAccount",
-        "check_user_has_mail": "EmailPresent",
-        "checkValidMail": "",
-        "logout": "Logout",
-        "validTopRankedPromotion": "topRankedPromo",
-        "getCustomerOrderingInfo": "getCustomerOrderingInfo"
-    ]
+    static var mockList: [String: String] = [:]
 }
 
 extension MockupUtility {

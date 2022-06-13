@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,16 +19,13 @@
 		23FA05782857C8B100A4BF55 /* BaseRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA056A2857C8B100A4BF55 /* BaseRepo.swift */; };
 		23FA05792857C8B100A4BF55 /* MockupUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA056B2857C8B100A4BF55 /* MockupUtility.swift */; };
 		23FA057A2857C8B100A4BF55 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA056C2857C8B100A4BF55 /* BaseViewController.swift */; };
-		23FA057B2857C8B100A4BF55 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA056D2857C8B100A4BF55 /* BaseTableViewController.swift */; };
 		23FA057C2857C8B100A4BF55 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA056E2857C8B100A4BF55 /* BaseViewModel.swift */; };
-		23FA057D2857C8B100A4BF55 /* LocalFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA056F2857C8B100A4BF55 /* LocalFetcher.swift */; };
 		23FA057E2857C8B100A4BF55 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA05702857C8B100A4BF55 /* UIViewController+Extension.swift */; };
 		23FA057F2857C8B100A4BF55 /* BaseRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA05712857C8B100A4BF55 /* BaseRemoteDataSource.swift */; };
 		23FA05802857C8B100A4BF55 /* RemoteFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA05722857C8B100A4BF55 /* RemoteFetcher.swift */; };
 		23FA05812857C8B100A4BF55 /* BaseRemoteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA05732857C8B100A4BF55 /* BaseRemoteRequest.swift */; };
-		23FA05822857C8B100A4BF55 /* BaseViewWithViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA05742857C8B100A4BF55 /* BaseViewWithViewModel.swift */; };
 		23FA05832857C8B100A4BF55 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA05752857C8B100A4BF55 /* BaseCoordinator.swift */; };
-		23FA05842857C8B100A4BF55 /* BaseLocalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA05762857C8B100A4BF55 /* BaseLocalRequest.swift */; };
+		23FA05862857F62B00A4BF55 /*  BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA05852857F62B00A4BF55 /*  BaseResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,16 +53,13 @@
 		23FA056A2857C8B100A4BF55 /* BaseRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepo.swift; sourceTree = "<group>"; };
 		23FA056B2857C8B100A4BF55 /* MockupUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockupUtility.swift; sourceTree = "<group>"; };
 		23FA056C2857C8B100A4BF55 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		23FA056D2857C8B100A4BF55 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		23FA056E2857C8B100A4BF55 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		23FA056F2857C8B100A4BF55 /* LocalFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalFetcher.swift; sourceTree = "<group>"; };
 		23FA05702857C8B100A4BF55 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		23FA05712857C8B100A4BF55 /* BaseRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRemoteDataSource.swift; sourceTree = "<group>"; };
 		23FA05722857C8B100A4BF55 /* RemoteFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFetcher.swift; sourceTree = "<group>"; };
 		23FA05732857C8B100A4BF55 /* BaseRemoteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRemoteRequest.swift; sourceTree = "<group>"; };
-		23FA05742857C8B100A4BF55 /* BaseViewWithViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewWithViewModel.swift; sourceTree = "<group>"; };
 		23FA05752857C8B100A4BF55 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
-		23FA05762857C8B100A4BF55 /* BaseLocalRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLocalRequest.swift; sourceTree = "<group>"; };
+		23FA05852857F62B00A4BF55 /*  BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " BaseResponse.swift"; sourceTree = "<group>"; };
 		3F14C00D61435556F5915E7B /* Pods-Nous Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nous Task.release.xcconfig"; path = "Target Support Files/Pods-Nous Task/Pods-Nous Task.release.xcconfig"; sourceTree = "<group>"; };
 		57D0037D1D99B8F56999B7D6 /* Pods_Nous_TaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nous_TaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B25DB08FD1602071E8BF47 /* Pods-Nous TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nous TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Nous TaskTests/Pods-Nous TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,16 +146,13 @@
 				23FA056A2857C8B100A4BF55 /* BaseRepo.swift */,
 				23FA056B2857C8B100A4BF55 /* MockupUtility.swift */,
 				23FA056C2857C8B100A4BF55 /* BaseViewController.swift */,
-				23FA056D2857C8B100A4BF55 /* BaseTableViewController.swift */,
 				23FA056E2857C8B100A4BF55 /* BaseViewModel.swift */,
-				23FA056F2857C8B100A4BF55 /* LocalFetcher.swift */,
 				23FA05702857C8B100A4BF55 /* UIViewController+Extension.swift */,
 				23FA05712857C8B100A4BF55 /* BaseRemoteDataSource.swift */,
 				23FA05722857C8B100A4BF55 /* RemoteFetcher.swift */,
 				23FA05732857C8B100A4BF55 /* BaseRemoteRequest.swift */,
-				23FA05742857C8B100A4BF55 /* BaseViewWithViewModel.swift */,
 				23FA05752857C8B100A4BF55 /* BaseCoordinator.swift */,
-				23FA05762857C8B100A4BF55 /* BaseLocalRequest.swift */,
+				23FA05852857F62B00A4BF55 /*  BaseResponse.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -174,7 +165,6 @@
 				76B25DB08FD1602071E8BF47 /* Pods-Nous TaskTests.debug.xcconfig */,
 				D00E56B17938EAD5C768A853 /* Pods-Nous TaskTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -373,16 +363,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23FA05842857C8B100A4BF55 /* BaseLocalRequest.swift in Sources */,
 				237CDD872856A5BE00D2C041 /* ViewController.swift in Sources */,
+				23FA05862857F62B00A4BF55 /*  BaseResponse.swift in Sources */,
 				23FA05792857C8B100A4BF55 /* MockupUtility.swift in Sources */,
 				23FA05772857C8B100A4BF55 /* BindableType.swift in Sources */,
-				23FA057B2857C8B100A4BF55 /* BaseTableViewController.swift in Sources */,
 				23FA05782857C8B100A4BF55 /* BaseRepo.swift in Sources */,
 				23FA057F2857C8B100A4BF55 /* BaseRemoteDataSource.swift in Sources */,
-				23FA057D2857C8B100A4BF55 /* LocalFetcher.swift in Sources */,
 				23FA057C2857C8B100A4BF55 /* BaseViewModel.swift in Sources */,
-				23FA05822857C8B100A4BF55 /* BaseViewWithViewModel.swift in Sources */,
 				237CDD832856A5BE00D2C041 /* AppDelegate.swift in Sources */,
 				23FA05832857C8B100A4BF55 /* BaseCoordinator.swift in Sources */,
 				23FA05812857C8B100A4BF55 /* BaseRemoteRequest.swift in Sources */,
@@ -486,7 +473,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -526,6 +515,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -539,7 +529,8 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

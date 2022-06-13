@@ -10,10 +10,12 @@ import Foundation
 import RxRelay
 import RxSwift
 
-protocol BaseCoordinatorProtocol: Coordinator {
+protocol BaseCoordinatorProtocol: AnyObject {
     associatedtype RouterType
     var router: PublishRelay<RouterType> { get set }
     var disposeBag: DisposeBag { get set }
+    var rootViewController: UINavigationController { get set }
+    func close()
     func performRouting(for route: RouterType)
 }
 

@@ -18,7 +18,6 @@ protocol ViewModelType: AnyObject {
     func handleError(_ error: RepoError)
     func handleBackendError(code: Int, body: [String: Any], name: String)
     
-    // init()
 }
 
 class BaseViewModel<RepoType: BaseRepo,
@@ -46,22 +45,11 @@ class BaseViewModel<RepoType: BaseRepo,
         }
     }
     
-//    required convenience init() {
-//        self.init(coordinator: nil)
-//    }
-    
     func close() {
         self.coordinator?.close()
     }
     
-    func handleError(_ error: RepoError) {
-        switch error {
-        case .backEnd(let code, let body, let name):
-            self.handleBackendError(code: code, body: body, name: name)
-        default:
-            break
-        }
-    }
+    func handleError(_ error: RepoError) {}
     
     func handleBackendError(code: Int, body: [String: Any], name: String) {}
 }

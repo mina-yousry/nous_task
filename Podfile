@@ -4,11 +4,12 @@
 
 def ui
   pod 'Kingfisher', '~> 5.0'
+  pod 'NVActivityIndicatorView', '4.8.0'
 end
 
 def network
   pod 'ReachabilitySwift'
-  pod 'Moya', '15.0.0'
+  pod 'Moya', '13.0.0'
 end
 
 def utility
