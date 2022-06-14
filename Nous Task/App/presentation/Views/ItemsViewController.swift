@@ -28,14 +28,28 @@ class ItemsViewController: BaseViewController<ItemsViewModel> {
     
     override func bindViewModel() {
         super.bindViewModel()
+        bindTableViewItems()
+        bindTableViewSelection()
+        bindSearchText()
+    }
+    
+    func bindTableViewItems() {
         self.viewModel?.items.bind(to: self.itemsTableView.rx.items){ (tableView, index, item) in
             let cell = tableView.dequeueReusableCell(withIdentifier: "ITemTableViewCell") as! ITemTableViewCell
             cell.setData(item: item)
             return cell
         }.disposed(by: disposeBag)
+    }
+    
+    func bindTableViewSelection() {
         self.itemsTableView.rx.modelSelected(Item.self).subscribe(onNext: { item in
             self.viewModel?.router.accept(.sendEmail(title: item.title, body: item.itemDescription))
         }).disposed(by: disposeBag)
-        self.searchField.rx.
+    }
+    
+    func bindSearchText() {
+        if let searchText = self.viewModel?.searchText {
+            self.searchField.rx.textChanged.throttle(RxTimeInterval.milliseconds(50), scheduler: MainScheduler.instance).bind(to: searchText).disposed(by: disposeBag)
+        }
     }
 }
