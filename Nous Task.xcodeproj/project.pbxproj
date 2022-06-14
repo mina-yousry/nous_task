@@ -15,6 +15,10 @@
 		237CDD8C2856A5C200D2C041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237CDD8B2856A5C200D2C041 /* Assets.xcassets */; };
 		237CDD8F2856A5C200D2C041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237CDD8D2856A5C200D2C041 /* LaunchScreen.storyboard */; };
 		237CDD9A2856A5C300D2C041 /* Nous_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237CDD992856A5C300D2C041 /* Nous_TaskTests.swift */; };
+		23C15E6328580C0B0096B0BA /* ItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C15E6228580C0B0096B0BA /* ItemsResponse.swift */; };
+		23C15E68285810060096B0BA /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C15E67285810060096B0BA /* Api.swift */; };
+		23C15E6A285815650096B0BA /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C15E69285815650096B0BA /* Providers.swift */; };
+		23C15E6C285816040096B0BA /* MoyaProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C15E6B285816040096B0BA /* MoyaProviderFactory.swift */; };
 		23FA05772857C8B100A4BF55 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA05692857C8B100A4BF55 /* BindableType.swift */; };
 		23FA05782857C8B100A4BF55 /* BaseRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA056A2857C8B100A4BF55 /* BaseRepo.swift */; };
 		23FA05792857C8B100A4BF55 /* MockupUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA056B2857C8B100A4BF55 /* MockupUtility.swift */; };
@@ -49,6 +53,10 @@
 		237CDD952856A5C300D2C041 /* Nous TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nous TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		237CDD992856A5C300D2C041 /* Nous_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nous_TaskTests.swift; sourceTree = "<group>"; };
 		237CDD9B2856A5C300D2C041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C15E6228580C0B0096B0BA /* ItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsResponse.swift; sourceTree = "<group>"; };
+		23C15E67285810060096B0BA /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		23C15E69285815650096B0BA /* Providers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
+		23C15E6B285816040096B0BA /* MoyaProviderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaProviderFactory.swift; sourceTree = "<group>"; };
 		23FA05692857C8B100A4BF55 /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		23FA056A2857C8B100A4BF55 /* BaseRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepo.swift; sourceTree = "<group>"; };
 		23FA056B2857C8B100A4BF55 /* MockupUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockupUtility.swift; sourceTree = "<group>"; };
@@ -132,9 +140,53 @@
 			path = "Nous TaskTests";
 			sourceTree = "<group>";
 		};
+		23C15E6128580BE70096B0BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23C15E6528580DF80096B0BA /* Requests */,
+				23C15E6428580DEA0096B0BA /* Responses */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23C15E6428580DEA0096B0BA /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				23C15E6228580C0B0096B0BA /* ItemsResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		23C15E6528580DF80096B0BA /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		23C15E6628580E060096B0BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				23C15E67285810060096B0BA /* Api.swift */,
+				23C15E6B285816040096B0BA /* MoyaProviderFactory.swift */,
+				23C15E69285815650096B0BA /* Providers.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		23C15E6D28581AD60096B0BA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		23FA05672857C86C00A4BF55 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				23C15E6D28581AD60096B0BA /* Data */,
+				23C15E6628580E060096B0BA /* Network */,
+				23C15E6128580BE70096B0BA /* Models */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -364,11 +416,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				237CDD872856A5BE00D2C041 /* ViewController.swift in Sources */,
+				23C15E6328580C0B0096B0BA /* ItemsResponse.swift in Sources */,
 				23FA05862857F62B00A4BF55 /*  BaseResponse.swift in Sources */,
+				23C15E68285810060096B0BA /* Api.swift in Sources */,
 				23FA05792857C8B100A4BF55 /* MockupUtility.swift in Sources */,
 				23FA05772857C8B100A4BF55 /* BindableType.swift in Sources */,
+				23C15E6C285816040096B0BA /* MoyaProviderFactory.swift in Sources */,
 				23FA05782857C8B100A4BF55 /* BaseRepo.swift in Sources */,
 				23FA057F2857C8B100A4BF55 /* BaseRemoteDataSource.swift in Sources */,
+				23C15E6A285815650096B0BA /* Providers.swift in Sources */,
 				23FA057C2857C8B100A4BF55 /* BaseViewModel.swift in Sources */,
 				237CDD832856A5BE00D2C041 /* AppDelegate.swift in Sources */,
 				23FA05832857C8B100A4BF55 /* BaseCoordinator.swift in Sources */,
