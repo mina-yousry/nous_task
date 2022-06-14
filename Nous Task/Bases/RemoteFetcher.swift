@@ -31,7 +31,7 @@ class RemoteFetcher {
     
     func getRemoteResponse
         <T: BaseTarget, R: BaseResponse>(request: BaseRemoteRequest<T>,
-                                         responseObservable: PublishSubject<R>) {
+                                         responseObservable: PublishSubject<R>?) {
         if isConnectedToInternet {
             self.loading?.accept(true)
             request.provider.request(request.requset) { [weak self] (result) in
@@ -41,25 +41,25 @@ class RemoteFetcher {
                     let decoder: JSONDecoder = JSONDecoder()
                     do {
                         let decodedResponse = try decoder.decode(R.self, from: response.data)
-                        responseObservable.onNext(decodedResponse)
+                        responseObservable?.onNext(decodedResponse)
                     } catch _ {
                         self?.error?.accept(.parsing)
-                        responseObservable.onError(RepoError.parsing)
+                        responseObservable?.onError(RepoError.parsing)
                     }
                 case .failure(let error):
                     guard let statusCode = error.response?.statusCode
                         else {
                             self?.error?.accept(.generic)
-                            responseObservable.onError(RepoError.generic)
+                            responseObservable?.onError(RepoError.generic)
                             return
                     }
                     switch statusCode {
                     case 500:
                         self?.error?.accept(.server)
-                        responseObservable.onError(RepoError.server)
+                        responseObservable?.onError(RepoError.server)
                     default:
                         self?.error?.accept(.generic)
-                        responseObservable.onError(RepoError.generic)
+                        responseObservable?.onError(RepoError.generic)
                     }
                 }
             }

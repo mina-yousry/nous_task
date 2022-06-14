@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Welcome: BaseResponse {
+class ItemsRsponse: BaseResponse {
     var items: [Item] = []
     
     enum CodingKeys: String, CodingKey {

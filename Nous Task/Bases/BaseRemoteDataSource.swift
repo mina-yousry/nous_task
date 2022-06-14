@@ -12,7 +12,6 @@ import RxRelay
 import RxSwift
 
 protocol RemoteDataSourceProtocol {
-    associatedtype RequestTargetType: BaseTarget
     var remoteFetcher: RemoteFetcher { get set }
     var disposeBag: DisposeBag { get }
     func getOnlineResponse
@@ -20,9 +19,7 @@ protocol RemoteDataSourceProtocol {
                                      responseObservable: PublishSubject<R>)
 }
 
-class BaseRemoteDataSource<T: BaseTarget>: RemoteDataSourceProtocol {
-    
-    typealias RequestTargetType = T
+class BaseRemoteDataSource: RemoteDataSourceProtocol {
     
     var remoteFetcher: RemoteFetcher
     var disposeBag: DisposeBag = DisposeBag()
