@@ -22,12 +22,20 @@ ItemsCoordinator> {
     
     required init(coordinator: ItemsCoordinator?) {
         super.init(coordinator: coordinator)
+        bindItemsResponse()
+        bindSearchAction()
+        self.repo.getData()
+    }
+    
+    func bindItemsResponse() {
         let itemsObservable = self.repo.response.map{ $0.items }.share()
         itemsObservable.bind(to: items).disposed(by: disposeBag)
         itemsObservable.subscribe(onNext: { [weak self] items in
             self?.allItems = items
         }).disposed(by: disposeBag)
-        self.repo.getData()
+    }
+    
+    func bindSearchAction() {
         searchText.subscribe(onNext: { [weak self] text in
             if text == "" {
                 self?.items.accept(self?.allItems ?? [])

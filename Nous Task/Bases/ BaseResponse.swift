@@ -8,4 +8,4 @@
 
 import Foundation
 
-class BaseResponse: Codable {}                                                                                                                                                                                                                                                                                          
+class BaseResponse: Codable {}

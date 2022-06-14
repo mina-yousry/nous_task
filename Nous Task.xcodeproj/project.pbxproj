@@ -161,9 +161,7 @@
 		23B3991F2859051100FF92C2 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
-				23B39922285905BF00FF92C2 /* Coordinator */,
-				23B399212859055200FF92C2 /* ViewModel */,
-				23B399202859054600FF92C2 /* Views */,
+				23B3993328594E2100FF92C2 /* Items */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -209,6 +207,16 @@
 				23B39931285946D300FF92C2 /* UISearchBar+Rx.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23B3993328594E2100FF92C2 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				23B39922285905BF00FF92C2 /* Coordinator */,
+				23B399212859055200FF92C2 /* ViewModel */,
+				23B399202859054600FF92C2 /* Views */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		23C15E6128580BE70096B0BA /* Models */ = {

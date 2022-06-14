@@ -11,7 +11,7 @@ import RxSwift
 import Action
 import RxCocoa
 
-class BaseViewController<T: ViewModelType>: UIViewController, BindableType {    
+class BaseViewController<T: ViewModelType>: UIViewController, BindableType {
     
     typealias ViewModel = T
     var viewModel: T?
