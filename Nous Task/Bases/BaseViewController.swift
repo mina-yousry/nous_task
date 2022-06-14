@@ -11,9 +11,10 @@ import RxSwift
 import Action
 import RxCocoa
 
-class BaseViewController: UIViewController, BindableType {
+class BaseViewController<T: ViewModelType>: UIViewController, BindableType {    
     
-    var viewModel: ViewModelType?
+    typealias ViewModel = T
+    var viewModel: T?
     let disposeBag = DisposeBag()
     
     // MARK: - Lifecycle Methods
