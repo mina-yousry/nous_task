@@ -42,6 +42,6 @@ extension Api: BaseTarget {
     }
     
     var name:String {
-        return "json_file"
+        return "items_request"
     }
 }

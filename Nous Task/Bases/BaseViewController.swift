@@ -14,6 +14,8 @@ import RxCocoa
 class BaseViewController<T: ViewModelType>: UIViewController, BindableType {
     
     typealias ViewModel = T
+    
+    //MARK: - Global Variables
     var viewModel: T?
     let disposeBag = DisposeBag()
     
@@ -39,6 +41,8 @@ class BaseViewController<T: ViewModelType>: UIViewController, BindableType {
         stopProgressAnimation()
     }
     
+    func handleError(_ error: RepoError) {}
+    
     // MARK: - Private Methods
     private func bindLoadingLogic() {
         viewModel?.isLoading.asDriver(onErrorJustReturn: false)
@@ -57,8 +61,5 @@ class BaseViewController<T: ViewModelType>: UIViewController, BindableType {
         viewModel?.error.subscribe(onNext: { [weak self] error in
             self?.handleError(error)
         }).disposed(by: disposeBag)
-    }
-
-    func handleError(_ error: RepoError) {
     }
 }

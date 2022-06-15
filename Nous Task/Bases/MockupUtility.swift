@@ -10,7 +10,7 @@ import Foundation
 import Moya
 
 class MockupUtility {
-    static var mockList: [String: String] = [:]
+    static var mockList: [String: String] = ["items_request":"items_v2"]
 }
 
 extension MockupUtility {

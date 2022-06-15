@@ -7,19 +7,23 @@
 //
 
 import Foundation
+import RxSwift
 import RxRelay
 
 class ItemsViewModel: BaseViewModel<Repo,
     ItemsControllerRoutes,
 ItemsCoordinator> {
     
+    //MARK: - Global Variables
     var allItems: [Item] = []
+    
     //MARK: - input
     var searchText = PublishRelay<String>()
     
     //MARK: - output
-    var items = BehaviorRelay<[Item]>(value: [])
+    var items = BehaviorSubject<[Item]>(value: [])
     
+    //MARK: - Life cycle methods
     required init(coordinator: ItemsCoordinator?) {
         super.init(coordinator: coordinator)
         bindItemsResponse()
@@ -27,6 +31,7 @@ ItemsCoordinator> {
         self.repo.getData()
     }
     
+    //MARK: - Class methods
     func bindItemsResponse() {
         let itemsObservable = self.repo.response.map{ $0.items }.share()
         itemsObservable.bind(to: items).disposed(by: disposeBag)
@@ -38,11 +43,11 @@ ItemsCoordinator> {
     func bindSearchAction() {
         searchText.subscribe(onNext: { [weak self] text in
             if text == "" {
-                self?.items.accept(self?.allItems ?? [])
+                self?.items.onNext(self?.allItems ?? [])
             } else {
                 let tempItems = self?.allItems
                 let filteredItems = tempItems?.filter{ $0.title.lowercased().contains(text.lowercased()) || $0.itemDescription.lowercased().contains(text.lowercased()) }
-                self?.items.accept(filteredItems ?? [])
+                self?.items.onNext(filteredItems ?? [])
             }
         }).disposed(by: disposeBag)
     }

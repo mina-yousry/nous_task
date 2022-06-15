@@ -7,28 +7,61 @@
 //
 
 import XCTest
+import RxSwift
+
 @testable import Nous_Task
 
 class Nous_TaskTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var viewModel: ItemsViewModel?
+    var disposeBag: DisposeBag?
+    
+    override func setUp() {
+        viewModel = ItemsViewModel(coordinator: nil)
+        disposeBag = DisposeBag()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func test_fetchDataFromApi() {
+        viewModel?.items.subscribe(onNext: { items in
+            XCTAssertEqual(items.count, 8)
+            XCTAssertEqual(items.first?.title, "Die ewige Welle")
+        }).disposed(by: disposeBag!)
+        viewModel?.repo.getData()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func test_search_title() {
+        viewModel?.items.skip(1).subscribe(onNext: { items in
+            XCTAssertEqual(items.count, 1)
+            XCTAssertEqual(items.first?.title, "Die ewige Welle")
+        }).disposed(by: disposeBag!)
+        viewModel?.searchText.accept("die ewige")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_search_description() {
+        viewModel?.items.skip(1).subscribe(onNext: { items in
+            XCTAssertEqual(items.count, 1)
+            XCTAssertEqual(items.first?.title, "Die ewige Welle")
+        }).disposed(by: disposeBag!)
+        viewModel?.searchText.accept("mikesch war anfang der 80er-Jahre ein enger freund von Leitmayr")
+    }
+    
+    func test_search_notFound() {
+        viewModel?.items.skip(1).subscribe(onNext: { items in
+            XCTAssertEqual(items.count, 0)
+        }).disposed(by: disposeBag!)
+        viewModel?.searchText.accept("fgdfgsdgsdgdfgsdfdfg")
+    }
+    
+    func test_search_empty() {
+        viewModel?.items.skip(1).subscribe(onNext: { items in
+            XCTAssertEqual(items.count, 8)
+        }).disposed(by: disposeBag!)
+        viewModel?.searchText.accept("")
+    }
+    
+    override func tearDown() {
+        viewModel = nil
+        disposeBag = nil
     }
 
 }
