@@ -1,5 +1,5 @@
 //
-//   BaseResponse.swift
+//  Providers.swift
 //  Nous Task
 //
 //  Created by Mina Yousry on 6/14/22.
@@ -8,4 +8,6 @@
 
 import Foundation
 
-class BaseResponse: Codable {}
+class  Providers {
+    static let apiProvider = MoyaPrviderFactory<Api>().create()
+}

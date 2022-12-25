@@ -1,8 +1,9 @@
 //
 //  LocalFetcher.swift
+//  Koinz
 //
 //  Created by Koinz on 08/02/2022.
-//  Copyright © 2022 Mina Yousry. All rights reserved.
+//  Copyright © 2022 GPlanet. All rights reserved.
 //
 
 import Foundation

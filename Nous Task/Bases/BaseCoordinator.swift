@@ -1,8 +1,9 @@
 //
 //  BaseCoordinator.swift
+//  Koinz
 //
 //  Created by Mina Yousry on 07/02/2022.
-//  Copyright © 2022 Mina Yousry. All rights reserved.
+//  Copyright © 2022 GPlanet. All rights reserved.
 //
 
 import Foundation
