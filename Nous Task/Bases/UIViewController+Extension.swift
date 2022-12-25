@@ -1,9 +1,8 @@
 // 
 //  UIViewController+Extension.swift
-//  Koinz
-// 
+//
 //  Created by Koinz on 19/12/2021.
-//  Copyright © 2021 GPlanet. All rights reserved.
+//  Copyright © 2021 Mina Yousry. All rights reserved.
 // 
 
 import Foundation

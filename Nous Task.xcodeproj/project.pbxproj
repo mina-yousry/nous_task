@@ -14,22 +14,7 @@
 		237CDD8C2856A5C200D2C041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237CDD8B2856A5C200D2C041 /* Assets.xcassets */; };
 		237CDD8F2856A5C200D2C041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237CDD8D2856A5C200D2C041 /* LaunchScreen.storyboard */; };
 		237CDD9A2856A5C300D2C041 /* Nous_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237CDD992856A5C300D2C041 /* Nous_TaskTests.swift */; };
-		23B3991A2858FB7300FF92C2 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B399192858FB7300FF92C2 /* Repo.swift */; };
-		23B3991C2858FBD200FF92C2 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3991B2858FBD200FF92C2 /* DataSource.swift */; };
-		23B3991E2858FC7600FF92C2 /* GetDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3991D2858FC7600FF92C2 /* GetDataRequest.swift */; };
-		23B39925285905EB00FF92C2 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B39923285905EB00FF92C2 /* ItemsViewController.swift */; };
-		23B39926285905EB00FF92C2 /* ItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23B39924285905EB00FF92C2 /* ItemsViewController.xib */; };
-		23B399282859063400FF92C2 /* ItemsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B399272859063400FF92C2 /* ItemsCoordinator.swift */; };
-		23B3992A285906D700FF92C2 /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B39929285906D700FF92C2 /* ItemsViewModel.swift */; };
-		23B3992E28591FBE00FF92C2 /* ITemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3992C28591FBE00FF92C2 /* ITemTableViewCell.swift */; };
-		23B3992F28591FBE00FF92C2 /* ITemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23B3992D28591FBE00FF92C2 /* ITemTableViewCell.xib */; };
-		23B39932285946D300FF92C2 /* UISearchBar+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B39931285946D300FF92C2 /* UISearchBar+Rx.swift */; };
-		23C15E6328580C0B0096B0BA /* ItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C15E6228580C0B0096B0BA /* ItemsResponse.swift */; };
-		23C15E68285810060096B0BA /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C15E67285810060096B0BA /* Api.swift */; };
-		23C15E6A285815650096B0BA /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C15E69285815650096B0BA /* Providers.swift */; };
 		23C15E6C285816040096B0BA /* MoyaProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C15E6B285816040096B0BA /* MoyaProviderFactory.swift */; };
-		23D26BB3285A948900313852 /* items_v2.json in Resources */ = {isa = PBXBuildFile; fileRef = 23D26BB2285A948800313852 /* items_v2.json */; };
-		23D26BB6285A9C3A00313852 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D26BB5285A9C3A00313852 /* NoDataView.xib */; };
 		23FA05772857C8B100A4BF55 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA05692857C8B100A4BF55 /* BindableType.swift */; };
 		23FA05782857C8B100A4BF55 /* BaseRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA056A2857C8B100A4BF55 /* BaseRepo.swift */; };
 		23FA05792857C8B100A4BF55 /* MockupUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA056B2857C8B100A4BF55 /* MockupUtility.swift */; };
@@ -63,22 +48,7 @@
 		237CDD952856A5C300D2C041 /* Nous TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nous TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		237CDD992856A5C300D2C041 /* Nous_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nous_TaskTests.swift; sourceTree = "<group>"; };
 		237CDD9B2856A5C300D2C041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23B399192858FB7300FF92C2 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
-		23B3991B2858FBD200FF92C2 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		23B3991D2858FC7600FF92C2 /* GetDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataRequest.swift; sourceTree = "<group>"; };
-		23B39923285905EB00FF92C2 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
-		23B39924285905EB00FF92C2 /* ItemsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsViewController.xib; sourceTree = "<group>"; };
-		23B399272859063400FF92C2 /* ItemsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCoordinator.swift; sourceTree = "<group>"; };
-		23B39929285906D700FF92C2 /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
-		23B3992C28591FBE00FF92C2 /* ITemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITemTableViewCell.swift; sourceTree = "<group>"; };
-		23B3992D28591FBE00FF92C2 /* ITemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ITemTableViewCell.xib; sourceTree = "<group>"; };
-		23B39931285946D300FF92C2 /* UISearchBar+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Rx.swift"; sourceTree = "<group>"; };
-		23C15E6228580C0B0096B0BA /* ItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsResponse.swift; sourceTree = "<group>"; };
-		23C15E67285810060096B0BA /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		23C15E69285815650096B0BA /* Providers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
 		23C15E6B285816040096B0BA /* MoyaProviderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaProviderFactory.swift; sourceTree = "<group>"; };
-		23D26BB2285A948800313852 /* items_v2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items_v2.json; sourceTree = "<group>"; };
-		23D26BB5285A9C3A00313852 /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
 		23FA05692857C8B100A4BF55 /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		23FA056A2857C8B100A4BF55 /* BaseRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepo.swift; sourceTree = "<group>"; };
 		23FA056B2857C8B100A4BF55 /* MockupUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockupUtility.swift; sourceTree = "<group>"; };
@@ -163,135 +133,32 @@
 			path = "Nous TaskTests";
 			sourceTree = "<group>";
 		};
-		23B3991F2859051100FF92C2 /* presentation */ = {
-			isa = PBXGroup;
-			children = (
-				23B3993328594E2100FF92C2 /* Items */,
-			);
-			path = presentation;
-			sourceTree = "<group>";
-		};
-		23B399202859054600FF92C2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				23D26BB4285A9BFE00313852 /* NoDataView */,
-				23B3992B28591E9100FF92C2 /* ItemCell */,
-				23B39923285905EB00FF92C2 /* ItemsViewController.swift */,
-				23B39924285905EB00FF92C2 /* ItemsViewController.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		23B399212859055200FF92C2 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				23B39929285906D700FF92C2 /* ItemsViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		23B39922285905BF00FF92C2 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				23B399272859063400FF92C2 /* ItemsCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		23B3992B28591E9100FF92C2 /* ItemCell */ = {
-			isa = PBXGroup;
-			children = (
-				23B3992C28591FBE00FF92C2 /* ITemTableViewCell.swift */,
-				23B3992D28591FBE00FF92C2 /* ITemTableViewCell.xib */,
-			);
-			path = ItemCell;
-			sourceTree = "<group>";
-		};
 		23B399302859464900FF92C2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				23B39931285946D300FF92C2 /* UISearchBar+Rx.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		23B3993328594E2100FF92C2 /* Items */ = {
-			isa = PBXGroup;
-			children = (
-				23B39922285905BF00FF92C2 /* Coordinator */,
-				23B399212859055200FF92C2 /* ViewModel */,
-				23B399202859054600FF92C2 /* Views */,
-			);
-			path = Items;
-			sourceTree = "<group>";
-		};
-		23C15E6128580BE70096B0BA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				23C15E6528580DF80096B0BA /* Requests */,
-				23C15E6428580DEA0096B0BA /* Responses */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		23C15E6428580DEA0096B0BA /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				23C15E6228580C0B0096B0BA /* ItemsResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		23C15E6528580DF80096B0BA /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				23B3991D2858FC7600FF92C2 /* GetDataRequest.swift */,
-			);
-			path = Requests;
 			sourceTree = "<group>";
 		};
 		23C15E6628580E060096B0BA /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				23C15E67285810060096B0BA /* Api.swift */,
 				23C15E6B285816040096B0BA /* MoyaProviderFactory.swift */,
-				23C15E69285815650096B0BA /* Providers.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		23C15E6D28581AD60096B0BA /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				23B399192858FB7300FF92C2 /* Repo.swift */,
-				23B3991B2858FBD200FF92C2 /* DataSource.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		23D26BB1285A945900313852 /* MockResponses */ = {
 			isa = PBXGroup;
 			children = (
-				23D26BB2285A948800313852 /* items_v2.json */,
 			);
 			path = MockResponses;
-			sourceTree = "<group>";
-		};
-		23D26BB4285A9BFE00313852 /* NoDataView */ = {
-			isa = PBXGroup;
-			children = (
-				23D26BB5285A9C3A00313852 /* NoDataView.xib */,
-			);
-			path = NoDataView;
 			sourceTree = "<group>";
 		};
 		23FA05672857C86C00A4BF55 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				23B3991F2859051100FF92C2 /* presentation */,
-				23C15E6D28581AD60096B0BA /* Data */,
 				23C15E6628580E060096B0BA /* Network */,
-				23C15E6128580BE70096B0BA /* Models */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -420,12 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				237CDD8F2856A5C200D2C041 /* LaunchScreen.storyboard in Resources */,
-				23B39926285905EB00FF92C2 /* ItemsViewController.xib in Resources */,
 				237CDD8C2856A5C200D2C041 /* Assets.xcassets in Resources */,
 				237CDD8A2856A5BE00D2C041 /* Main.storyboard in Resources */,
-				23D26BB3285A948900313852 /* items_v2.json in Resources */,
-				23B3992F28591FBE00FF92C2 /* ITemTableViewCell.xib in Resources */,
-				23D26BB6285A9C3A00313852 /* NoDataView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,28 +387,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23C15E6328580C0B0096B0BA /* ItemsResponse.swift in Sources */,
 				23FA05862857F62B00A4BF55 /*  BaseResponse.swift in Sources */,
-				23B3991A2858FB7300FF92C2 /* Repo.swift in Sources */,
-				23B39925285905EB00FF92C2 /* ItemsViewController.swift in Sources */,
-				23C15E68285810060096B0BA /* Api.swift in Sources */,
 				23FA05792857C8B100A4BF55 /* MockupUtility.swift in Sources */,
-				23B3991E2858FC7600FF92C2 /* GetDataRequest.swift in Sources */,
-				23B3991C2858FBD200FF92C2 /* DataSource.swift in Sources */,
 				23FA05772857C8B100A4BF55 /* BindableType.swift in Sources */,
 				23C15E6C285816040096B0BA /* MoyaProviderFactory.swift in Sources */,
 				23FA05782857C8B100A4BF55 /* BaseRepo.swift in Sources */,
 				23FA057F2857C8B100A4BF55 /* BaseRemoteDataSource.swift in Sources */,
-				23C15E6A285815650096B0BA /* Providers.swift in Sources */,
 				23FA057C2857C8B100A4BF55 /* BaseViewModel.swift in Sources */,
 				237CDD832856A5BE00D2C041 /* AppDelegate.swift in Sources */,
 				23FA05832857C8B100A4BF55 /* BaseCoordinator.swift in Sources */,
-				23B399282859063400FF92C2 /* ItemsCoordinator.swift in Sources */,
-				23B3992A285906D700FF92C2 /* ItemsViewModel.swift in Sources */,
 				23FA05812857C8B100A4BF55 /* BaseRemoteRequest.swift in Sources */,
-				23B3992E28591FBE00FF92C2 /* ITemTableViewCell.swift in Sources */,
 				23FA057E2857C8B100A4BF55 /* UIViewController+Extension.swift in Sources */,
-				23B39932285946D300FF92C2 /* UISearchBar+Rx.swift in Sources */,
 				23FA057A2857C8B100A4BF55 /* BaseViewController.swift in Sources */,
 				23FA05802857C8B100A4BF55 /* RemoteFetcher.swift in Sources */,
 			);
@@ -711,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88CB2FD138663936C7FBC67E /* Pods-Nous Task.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U483MBN73;
@@ -730,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3F14C00D61435556F5915E7B /* Pods-Nous Task.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U483MBN73;
@@ -749,7 +603,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 76B25DB08FD1602071E8BF47 /* Pods-Nous TaskTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Nous TaskTests/Info.plist";
@@ -771,7 +625,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D00E56B17938EAD5C768A853 /* Pods-Nous TaskTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Nous TaskTests/Info.plist";
