@@ -42,7 +42,7 @@ ItemsCoordinator> {
     
     func bindSearchAction() {
         searchText.subscribe(onNext: { [weak self] text in
-            if text == "" {
+            if text.isEmpty {
                 self?.items.onNext(self?.allItems ?? [])
             } else {
                 let tempItems = self?.allItems
